@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en" class="h-100">
   <head>
@@ -53,11 +54,12 @@
       <h3 class="float-md-start mb-0">Provincia del Chaco</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
         <a class="nav-link active" aria-current="page" href="{% url 'login' %}">iniciar Seción </a>
-        <a class="nav-link" href="{% url 'registro' %}">Registrarse</a>
+        <a class="nav-link" href="{% url 'registrarse' %}">Registrarse</a>
         <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
       </nav>
     </div>
   </header>
+{% block contenido %}
 
   <main class="px-3">
     <h1></h1>
@@ -66,7 +68,7 @@
       <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-black">Ingresar</a>
     </p>
   </main>
-
+{% endblock contenido %}
   <footer class="mt-auto text-white-50">
     <p>Desarrollado por <a href="https://getbootstrap.com/" class="text-white">Grupo 6</a>, correos <a href="https://twitter.com/mdo" class="text-white">cuperx.gmail.com</a>.</p>
   </footer>

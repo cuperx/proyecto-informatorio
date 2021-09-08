@@ -24,5 +24,5 @@ urlpatterns = [
     path('contacto/', views.contacto, name = 'contacto'),
     path('principal/', views.principal, name ='principal'),
     path('login/', aut_views.LoginView.as_view(template_name = "login.html"), name = "login"),
-    path('registrarse/', views.registrarse, name = 'registro')
+    path('registrarse/', views.registrarse, name = 'registrarse')
 ]
